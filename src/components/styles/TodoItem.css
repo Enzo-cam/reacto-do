@@ -1,0 +1,53 @@
+.TodoItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #330000;
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px 6%;
+  padding: 0 10px;
+  height: 3.2rem;
+  box-shadow: -1px 4px 5px 0px rgba(0,0,0,0.25);
+  /*-webkit-box-shadow: -1px 4px 5px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: -1px 4px 5px 0px rgba(0,0,0,0.25); */
+}
+
+.TodoItem-p {
+  margin: 24px 0 24px 24px;
+  width: calc(100% - 120px);
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  }
+
+.TodoItem-p--complete {
+  text-decoration: line-through;
+}
+
+.TodoCheck {
+  cursor: pointer;
+}
+
+.deleteTodo:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.IconCheck-active {
+  color: #940101;
+}
+
+.TodoItem-completed {
+  text-decoration: line-through;
+  color: #515666;
+}
+
+p {
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+  overflow: hidden;
+  max-width: 90%;
+}
