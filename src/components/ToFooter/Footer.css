@@ -28,7 +28,7 @@ a {
 }
 @media (max-width: 1080px) {
     .Footer {
-        max-width: 55%
+        max-width: 80%
     }
 }
 @media (max-width: 800px) {

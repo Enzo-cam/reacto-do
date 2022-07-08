@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/TodoHeader.css'
+import './TodoHeader.css'
 
 function TodoHeader({ children }) {
     return (

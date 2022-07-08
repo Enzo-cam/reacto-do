@@ -1,5 +1,5 @@
 import React from "react";
-import './styles/Footer.css'
+import './Footer.css'
 import { SiPlatzi, SiLinkedin, SiGithub } from "react-icons/si";
 
 function ToFooter() {

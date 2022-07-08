@@ -1,17 +1,8 @@
 import React from "react";
-import './styles/TodoItem.css'
+import './TodoItem.css'
 import { AiFillCheckCircle, AiFillCloseCircle } from "react-icons/ai";
 
 function TodoItem(props) {
-    // const onComplete = ( ) => {
-    //     alert('Completaste el ToDo ' + props.text)
-    // }
-    const onDelete = ( ) => {
-        alert('Completaste el ToDo ' + props.text)
-
-    }
-
-
     return(
         <li className="TodoItem">
             <AiFillCheckCircle 
