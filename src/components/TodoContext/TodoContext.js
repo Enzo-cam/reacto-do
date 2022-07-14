@@ -13,6 +13,7 @@ function TodoProvider(props){
 
         // UseState's
         const [searchVal, setSearchVal] = useState('');
+        const [modal, setModal] = useState(false);
 
         //Cantidad de ToDo's completados y el total de los mismos
         const completedTodos = todos.filter(todo => todo.completed).length;
@@ -26,6 +27,16 @@ function TodoProvider(props){
             const todoIndex = todos.findIndex(todo => todo.text === text)
             const newTodos = [...todos]
             newTodos[todoIndex].completed = !todos[todoIndex].completed;
+            saveTodos(newTodos)
+        }
+
+        // Fuction to add a to do
+        const addTodo = (text) => {
+            const newTodos = [...todos]
+            newTodos.push({
+                completed: false,
+                text
+            })
             saveTodos(newTodos)
         }
         
@@ -47,6 +58,9 @@ function TodoProvider(props){
             todosFiltered,
             completeTodos,
             deleteTodo,
+            modal,
+            setModal,
+            addTodo
         }}>
             {props.children}
         </TodoContext.Provider>

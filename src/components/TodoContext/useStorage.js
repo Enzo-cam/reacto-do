@@ -27,7 +27,7 @@ function useStorage(itemName, initialValue){
             }
         }, 1000);
         
-        })
+        }, [])
         //Function to save todo in the local storage.
         const saveItem = (newItem) => {
             const stringItem = JSON.stringify(newItem);
